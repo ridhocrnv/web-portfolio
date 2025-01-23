@@ -366,6 +366,110 @@ header .cta:hover {
 
 /* Services End */
 
+/* About Start */
+.about {
+  background-color: var(--third-color);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+
+.about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about .container .title {
+  margin: 0;
+  padding: 0;
+}
+
+.about .title .section-title span {
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.about .title .section-title {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+.about .about-img {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.about .about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--secondary-color);
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+
+.about p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: var(--fourth-color);
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stats .stat {
+  text-align: center;
+}
+
+.stats .stat h3 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.stats .stat p {
+  font-size: 1rem;
+  color: var(--fourth-color);
+}
+
+.download {
+  margin-top: 30px;
+}
+
+.download button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 20px 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--secondary-color) 0.3s;
+}
+
+.download button:hover {
+  background-color: var(--fourth-color);
+}
+/* About End */
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .container {
@@ -379,11 +483,16 @@ header .cta:hover {
   }
 
   .service-cards {
-    flex-direction: columns;
+    flex-direction: column;
     gap: 20px;
   }
 
   .service-card {
     flex-basis: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
   }
 }
